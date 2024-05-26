@@ -20,7 +20,7 @@
 
 console.log(Math.random());
 console.log((Math.random()*10)+1); // to get num bw 1 and 11(excluding 11)
-console.log((Math.floor(Math.random()*10)+1); // to get num bw 1 to 10(inclusive)
+console.log(Math.floor(Math.random()*10)+1); // to get num bw 1 to 10(inclusive)
 
 // to get val bw min and max
 const min=10
