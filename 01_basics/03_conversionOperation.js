@@ -42,3 +42,4 @@ console.log(boolFlag);
 // "something"=> true
 // ""=> false
 
+console.log(typeof (NaN));

@@ -10,6 +10,9 @@
 
 //  object 
 
+// null is a standalone value means value aayi hee nhi
+// undefined means value in not assigned
+
 console.log(typeof "partiksh")
 
 console.log(typeof null)
