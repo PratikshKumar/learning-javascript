@@ -36,3 +36,5 @@ person.hobbies.push("photography");
 console.log(person.age); // Outputs: 31
 console.log(person.isEmployed); // Outputs: false
 console.log(person.hobbies); // Outputs: ["reading", "traveling", "coding", "photography"]
+
+console.log(typeof person);
