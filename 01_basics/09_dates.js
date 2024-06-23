@@ -18,6 +18,7 @@ let myTimeStamp=Date.now();
 
 console.log(myTimeStamp);
 console.log(myDate.getTime());
+console.log("haaan");
 // we can compare these 2 time stamps for comparison
 // it is time in milli sec from 1 jan 1970
 
