@@ -17,8 +17,8 @@ console.log(JsUser["email"]);
 
 // USING SYMBOL IN A OBJECT, we use []
 
-const mySym= Symbol("key1");
-// console.log(mySym);
+const mySym= Symbol("kuch to h");
+console.log(mySym);
 
 const JsUser2={
     name: "Patricks",
@@ -30,7 +30,9 @@ const JsUser2={
 }
 
 console.log(JsUser2[mySym]);
-
+console.log(JsUser2.name);
+console.log(JsUser2["name"]);
+// console.log(mySym);
 
 // when i feeze my Object, thrn any changes done it in will not  be reflected 
 Object.freeze(JsUser2);

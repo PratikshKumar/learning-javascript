@@ -8,6 +8,18 @@ const user = {
         console.log(this);
     }
 }
+
+const userr={
+    name:"Zamasu",
+    power:"3849",
+
+    Introduction : function(){
+        console.log(`Hi. I am ${this.name}. And my power level is ${this.power} `);
+    }
+}
+
+// console.log(userr.Introduction);
+userr.Introduction();
 // this refers to the current context 
 
 // user.welcomeMessage();
@@ -24,3 +36,4 @@ console.log(this);
 
 
 
+console.log(this);

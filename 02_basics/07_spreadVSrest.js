@@ -16,6 +16,10 @@ console.log(Array.isArray(num3));
 // multiple elements into a single array,
 // especially in function definitions
 
+// if we dont know that how many arguments can come from user side but we want to be ready on every case 
+// for that scenario we use rest operator 
+// rest operator helps us to collect all things in a one complete array 
+ 
 function calculatePrice(...num1)
 {
     return num1;
