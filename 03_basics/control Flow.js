@@ -12,3 +12,31 @@ for(const [key,val] of mp)
 {
     console.log(key, ` `, val);
 }
+
+const arr=[1,2,3,4];
+
+// arr.forEach( function(val){
+//     console.log(val);
+// } )
+
+// arr.forEach( (val)=>{
+//     console.log(val);
+// } )
+
+// arr.forEach( (item, ind,ar)=>{
+//     console.log(ind);
+// } )
+
+
+// ACCESSING ARRAY OF OBJECTS 
+
+const arr2=[
+    {name:"Pratiksh"},{name:"ms"},{name:"wd"}
+];
+
+arr2.forEach( (item)=>{
+    console.log(item.name);
+} );
+
+
+// for each do not return anytihng 
