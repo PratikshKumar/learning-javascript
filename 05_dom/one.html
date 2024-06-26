@@ -16,7 +16,18 @@
 <body class="bg-black">
     <div >
         <h1 id="title" class="heading">DOM LEARNING ON CHAI ND CODE <span style="display: none;">text test</span> </h1>
+
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem, ipsum.</h2>
+        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
         <p>Lorem ipsum dolor sit.</p>
+
+        <ul>
+            <li> one </li>
+            <li> two </li>
+            <li> three </li>
+        </ul>
+
     </div>
     </body>
 </html>
@@ -58,3 +69,60 @@ title.innerText;  // to view only part which is visible
 
 title.textContent   // to view all hiden text 
 'DOM LEARNING ON CHAI ND CODE text test ' -->
+
+<!-- HTMLCollection [h1#title.heading, title: h1#title.heading]
+document.querySelector('h1')
+<h1 id=​"title" class=​"heading" style=​"background-color:​ green;​ padding:​ 15px;​ border-radius:​ 10px;​">​…​</h1>​
+  -->
+
+  <!-- document.querySelector('h2')
+<h2>​Lorem ipsum dolor sit amet.​</h2>​
+
+document.querySelector('#title')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+
+document.querySelector('.heading')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+
+// id written by #. class writen using dot 
+undefined -->
+
+
+<!-- document.querySelector('ul')
+<ul>​…​</ul>​
+
+const myul=document.querySelector('ul')
+undefined
+
+const myli=myul.querySelector('li')
+undefined
+
+myli.style.backgroundColor="red";
+'red'
+
+myli.style.padding="10px";
+'10px'
+
+myli.innerText="five"
+'five' -->
+
+<!-- ---------------------------------------------- 
+-->
+
+<!-- let lists = document.querySelectorAll('li');
+
+lists.forEach(function(l) {
+    l.style.backgroundColor = 'green';
+}); -->
+
+
+
+
+<!-- getElementByClassName  -->
+
+<!-- HTML COLLECTION to arrays :
+// say temp is a html collection 
+
+const new_arr= Array.from(temp);
+
+-->
