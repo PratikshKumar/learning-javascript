@@ -22,6 +22,10 @@
             <li>
                 <img width="200px" id="om" src="https://i.pinimg.com/474x/30/5c/6f/305c6f0e1f8308690d4b01228ed02737.jpg" alt="om">
             </li>
+
+            <li>
+                <img width="200px" id=  "owl" src="https://mindbodygreen-res.cloudinary.com/image/upload/c_crop,x_0,y_0,w_2000,h_1334/c_fill,w_2000,h_1200,g_auto,fl_lossy,f_jpg/org/1lbfcrheulahhlt6g.jpg" alt="">
+            </li>
         </ul>
     </div>
 </body>
@@ -31,10 +35,36 @@
     //     alert("owl dabadiya");
     // }
 
-    document.getElementById("owl").addEventListener('click', function(e){
-        // alert("owl dabadiya");
+    // document.getElementById("owl").addEventListener('click', function(e){
+    //     alert("owl dabadiya");
+    // },false);
 
-    },false);
+    // document.getElementById("images").addEventListener('click',function(e){
+    //     console.log("clicked inide the ul");
+    //     alert("clicked inide the ul");
+    // });
+
+    // document.getElementById("owl").addEventListener('click',function(e){
+    //     console.log("owl clicked");
+    //     alert("owl clicked");
+    // });
+
+    // same as attachEvent() // but older 
+
+    // console.log(document.querySelector('#images'));
+    // console.log(document.querySelectorAll());
+
+    document.querySelector('#images').addEventListener('click',function(e){
+        // console.log(e);
+        // console.log(e.target);
+        // console.log(e.target.parentNode);
+        if(e.target.tagName=="IMG"){
+            let yo=e.target.parentNode;
+            yo.remove();
+        }
+
+    })
+
 </script>
 
 </html>

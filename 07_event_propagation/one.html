@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Capturing Example</title>
+</head>
+<body>
+
+  <div id="outer" style="border: 1px solid black; padding: 20px;">
+    <div id="middle" style="border: 1px solid red; padding: 20px;">
+      <div id="inner" style="border: 1px solid blue; padding: 20px;">
+        Click inside the blue box.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("outer").addEventListener('click', function(e){
+        console.log("outer div cliked");
+        alert("outer div cliked");
+        // e.stopPropagation();
+    });
+
+    document.getElementById("middle").addEventListener('click',function(e){
+        console.log("middle div cliked");
+        alert("middle div cliked");
+        // e.stopPropagation();
+
+    },true);
+
+    document.getElementById("inner").addEventListener('click',function(e){
+        console.log("innner div clickd");
+        alert("inner div cliked");
+        // e.stopPropagation();
+    });
+
+
+  </script>
+
+
+</body>
+</html>
