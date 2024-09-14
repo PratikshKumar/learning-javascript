@@ -30,7 +30,7 @@ console.log(typeof name2);
 
 const str="   lai   ";
 console.log(str);
-console.log(str.trim());
+console.log(str.trim() + "-");
 
 // str.replace('a','y');
 console.log(str.includes('sundar'));

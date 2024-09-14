@@ -32,7 +32,7 @@
     console.log(id==id2);
 
     // const num=5743658765n
-    // just like c++ has *1ll, in jswe have n written after number 
+    // just like c++ has *1ll, in js we have n written after number 
 
     const words= ["lai", "vai", "laivailai"] // array
 
