@@ -6,6 +6,13 @@ mp.set('In','India');
 mp.set('USA','America');
 mp.set('Pak','Najaiz Aulad');
 
+
+
+console.log(mp);
+console.log(mp.keys());
+console.log(mp.values());
+
+
 // mp['UK']='United Kingdom'; // WRONG METHOD  
 
 for(const [key,val] of mp)
@@ -13,7 +20,7 @@ for(const [key,val] of mp)
     console.log(key, ` `, val);
 }
 
-const arr=[1,2,3,4];
+const arr=[1,2,3,5];
 
 // arr.forEach( function(val){
 //     console.log(val);
@@ -23,9 +30,9 @@ const arr=[1,2,3,4];
 //     console.log(val);
 // } )
 
-// arr.forEach( (item, ind,ar)=>{
-//     console.log(ind);
-// } )
+arr.forEach( (item, ind,ar)=>{
+    console.log(item);
+} );
 
 
 // ACCESSING ARRAY OF OBJECTS 

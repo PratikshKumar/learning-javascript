@@ -22,6 +22,14 @@ PHASES OF JS EXECUTION :
 
 
 /*
+
+Global Execution Context contains two phases
+ 1. memory component
+  2. code execution component --- 
+  
+  In memory component memory is reserved for variables(initially assinged with undefined) 
+  and functions(assigned with defination) whereas in code execution component all assignment
+   of variables, calculations etc. are performed.
     
 */
 

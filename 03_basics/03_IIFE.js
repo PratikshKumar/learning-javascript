@@ -16,9 +16,21 @@
 
 // first () means fn defination and second () means fn execution 
 
+// const yo = ( ()=>
+// {
+//     console.log(`DB yo CONNECTED`);
+// })();
+
+
 ( ()=>{
     console.log(`DB 2 CONNECTED`);
 } )();
+
+( ()=>{
+    console.log(`DB 4 CONNECTED`);
+} )();
+
+
 
 ( (name)=>{
     console.log(`DB 3 coonnetd by ${name}`);
