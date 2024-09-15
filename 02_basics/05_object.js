@@ -12,6 +12,8 @@ const ob3={5:"a", 6:"b"};
 const ob4= Object.assign({},ob1,ob2,ob3);
 const ob5= {...ob1,...ob2,...ob3};
 console.log(ob4);
+console.log("-----");
+
 console.log(ob5);
 
 console.log(Object.keys(ob4));

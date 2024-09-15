@@ -4,14 +4,15 @@
 
 let myArr= new Array(1,2,3,4,5);
 console.log(typeof myArr);
+console.log(myArr[2]);
 
 console.log(myArr);
 const arr2=myArr.join()
 console.log(typeof arr2);
 console.log(arr2);
 
-// console.log("--------");
-// console.log(arr2[1]);
+console.log("--------");
+console.log(arr2[1]);
 
 console.log("A ",myArr); // A [1,2,3,4,5]
 

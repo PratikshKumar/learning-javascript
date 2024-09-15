@@ -22,9 +22,19 @@ const userr={
 userr.Introduction();
 // this refers to the current context 
 
+console.log("------");
+
+
+console.log(this);
+
+console.log("------p");
+
+
 // user.welcomeMessage();
-// user.username="spongebob";
+user.username="spongebob";
 user.welcomeMessage()
+
+console.log("------uu");
 
 console.log(this);
 // here this refers to an empty object in our environemt
@@ -36,4 +46,5 @@ console.log(this);
 
 
 
+console.log("------");
 console.log(this);

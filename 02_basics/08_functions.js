@@ -9,7 +9,7 @@ function addOne(n)
 {
     return n+1;
 }
-const addTwo=funtion(n)
+const addTwo=function(n)
 {
     return n+2;
 }

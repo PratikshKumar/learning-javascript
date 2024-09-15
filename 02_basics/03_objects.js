@@ -38,3 +38,5 @@ console.log(JsUser2["name"]);
 Object.freeze(JsUser2);
 JsUser2.age=21;
 console.log(JsUser2);
+
+console.log(typeof(JsUser2));
