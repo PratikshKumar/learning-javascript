@@ -13,6 +13,44 @@
 </body>
 
 <script>
+
+    // ----------------ADD-----------------------
+    function addLang(lang)
+    {
+        const li = document.createElement('li');
+        li.innerHTML= `${lang}`;
+        document.querySelector('.language').append(li);
+    }
+    addLang("Python");
+    addLang("C++");
+
+    function addLang_Optimised(lang)
+    {
+        const li = document.createElement('li');
+        const text = document.createTextNode(lang);
+        li.appendChild(text);
+
+        document.querySelector('.language').appendChild(li);
+    }
+
+    addLang_Optimised("ML");
+    
+    // ---------------EDIT---------------------
+
+    const secLan = document.querySelector("li:nth-child(2)")
+    console.log(secLan);
+
+    // secLan.innerHTML="CN";
+    const new_li = document.createElement("li");
+    new_li.textContent="OS";
+    secLan.replaceWith(new_li);
+    
+
+    
+
+</script>
+
+<!-- <script>
     function addLanguage(langName)
     {
         const li=document.createElement('li');
@@ -65,6 +103,6 @@
     
 
 
-</script>
+</script> -->
 
 </html>
