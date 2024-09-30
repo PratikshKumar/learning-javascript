@@ -82,7 +82,7 @@ promiseFour.then((user)=>{
 const promiseFive = new Promise((resolve,reject)=>{
 
     setTimeout(()=>{
-        let error= false;
+        let error= true;
         if(!error){
             resolve({username:"Videl", password: "Gohan loves Videl"});
         }
@@ -90,7 +90,20 @@ const promiseFive = new Promise((resolve,reject)=>{
         {
             reject('Videl ko khaansi aa gyi');
         }
-    },3000);
+    },4000);
 
 });
 
+// we can use Async Await also instead of then and catch in promises
+
+async function consumePromiseFive(){
+   try{ const response = await promiseFive;
+    console.log(response);
+   }
+   catch(error){
+    console.log(error);
+    
+   }
+    
+};
+consumePromiseFive();
