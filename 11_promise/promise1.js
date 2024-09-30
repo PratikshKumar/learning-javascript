@@ -1,1 +1,96 @@
-const pro
+const promiseOne = new Promise(function(resolve,reject){
+    setTimeout(() => {
+        console.log('Async completed');
+        resolve();
+        
+    }, 2000);
+});
+
+promiseOne.then(function(){
+    console.log("Promise consumed");
+    
+})
+
+// Q/ BlueBird li:
+// when promses were nit there in js 
+// these were used.
+
+
+new Promise(function(resolve,reject){
+    setTimeout(function(){
+        console.log("Async-2");
+        resolve();
+
+    },3000);
+}).then(()=>{
+    console.log("Async2 resilved");
+});
+
+
+
+const promiseThree = new Promise(function(resolve,reject){
+    setTimeout(()=>{
+        resolve({username:"Chai", email:"chai@code.com"})
+    },1000)
+})
+
+promiseThree.then((user)=>{
+    console.log(user);
+    
+})
+
+
+
+
+
+
+
+
+
+const promiseFour = new Promise(function(resolve,reject){
+    setTimeout(()=>{
+        let error= false;
+        if(!error){
+            resolve({username:"Goten", password: "Gohan bhaai"});
+        }
+        else
+        {
+            reject('CALL GOKU. ERROR AAGYA');
+        }
+    },3000);
+
+});
+
+promiseFour.then((user)=>{
+    console.log(user);
+    return user.username;
+}).then((username)=>{
+    console.log(username);
+}).catch((error)=>{
+    console.log(error);
+    
+}).finally(()=> console.log("the promose id either reolsved or rejected"));
+
+
+
+// finally will always execute totll that if it is complted that we wanted todo or not 
+
+
+
+
+
+const promiseFive = new Promise((resolve,reject)=>{
+
+    setTimeout(()=>{
+        let error= false;
+        if(!error){
+            resolve({username:"Videl", password: "Gohan loves Videl"});
+        }
+        else
+        {
+            reject('Videl ko khaansi aa gyi');
+        }
+    },3000);
+
+});
+
