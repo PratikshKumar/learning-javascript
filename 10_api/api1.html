@@ -1,0 +1,61 @@
+<!-- Fetch us used in Api commands. But it is 
+launched 3-4 years ago only. Before that fetch,  
+API request fetching was also present. 
+So how it was done.. It was done by XML HTTP request. 
+
+XML Http Request -> XML Http RequestEventTarget -> Event Target 
+
+XML Http Request is heavily used in AJAX programming. (Asynchonous JS and XML)
+
+There are states of every thing in this. 
+
+Ready State Status : 
+        0 : UNSENT : Cliwnt Created but open() not called 
+        1 : OPENED : open() has called 
+        2 : Headers Received 
+        3 : Loading 
+        4 : DONE
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;">
+    Lorem, ipsum dolor sit 
+    amet consectetur adipisicing
+     elit. Illo, facilis?
+</body>
+
+<script>
+    const requestURL = 'https://api.github.com/users/PratikshKumar';
+    // creating an object 
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET',requestURL);
+
+    // to consitnuossly track ready state, we use onreadystatechange
+    xhr.onreadystatechange= function()
+    {
+        // jab state change ho to 
+        console.log(xhr.readyState);   
+        if(xhr.readyState==4)
+        {
+            const data = JSON.parse(this.responseText);
+            // fetching data and convertinf string data  format too JSON format 
+            
+            console.log(data.followers);
+            
+               
+        }
+    }
+    xhr.send();
+
+
+</script>
+
+</html>
