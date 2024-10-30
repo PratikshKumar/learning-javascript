@@ -53,3 +53,38 @@ promise3.then((user)=>{
     
 });
 
+
+
+// -- ABOVE CODE IN ASYNC AWAIT FORMAT --
+
+async function promiseToAsync(){
+
+try{
+
+const user = await new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        let error = false;
+        if(!error)
+        {
+            resolve("hogya resolve");
+        }
+        else reject("rejected again");
+    },2000);
+});
+
+console.log(user);
+
+}
+catch(error){
+    console.log(error);
+}
+finally{
+    console.log("finished");
+}
+
+}
+
+promiseToAsync();
+
+
+

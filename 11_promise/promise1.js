@@ -112,3 +112,17 @@ promiseFour.then((user)=>{
     
 // };
 // consumePromiseFive();
+
+
+// ----------------------------PRACTICE-----------
+
+
+// const promisee = new promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         resolve({name:"Videl", age: 21});
+//     },2000);
+// });
+// promisee.then((user)=>{
+//     console.log(user);
+// });
+
